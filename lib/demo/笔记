@@ -1,0 +1,20 @@
+Flutter 中拥有需要将近30种内置的 布局Widget，其中常用有 Container、Padding、Center、Flex、Stack、Row、Colum、ListView 等，下面简单讲解它们的特性和使用。
+Container	只有一个子 Widget。默认充满，包含了padding、margin、color、宽高、decoration 等配置。
+Padding	只有一个子 Widget。只用于设置Padding，常用于嵌套child，给child设置padding。
+Center	只有一个子 Widget。只用于居中显示，常用于嵌套child，给child设置居中。
+Stack	可以有多个子 Widget。 子Widget堆叠在一起。
+Colum	可以有多个子 Widget。垂直布局。
+Row	可以有多个子 Widget。水平布局。
+Expanded	只有一个子 Widget。在 Colum 和 Row 中充满。
+ListView	可以有多个子 Widget。自己意会吧。
+
+Flutter 中除了布局的 Widget，还有交互显示的 Widget 和完整页面呈现的Widget。其中常见的有 MaterialApp、Scaffold、Appbar、Text、Image、FlatButton等。下面简单介绍这些 Wdiget，并完成一个页面。
+类型	作用特点
+MaterialApp	一般作为APP顶层的主页入口，可配置主题，多语言，路由等
+Scaffold	一般用户页面的承载Widget，包含appbar、snackbar、drawer等material design的设定。
+Appbar	一般用于Scaffold的appbar ，内有标题，二级页面返回按键等，当然不止这些，tabbar等也会需要它 。
+Text	显示文本，几乎都会用到，主要是通过style设置TextStyle来设置字体样式等。
+RichText	富文本，通过设置TextSpan，可以拼接出富文本场景。
+TextField	文本输入框 ：new TextField(controller: //文本控制器, obscureText: "hint文本");
+Image	图片加载: new FadeInImage.assetNetwork( placeholder: "预览图", fit: BoxFit.fitWidth, image: "url");
+FlatButton	按键点击: new FlatButton(onPressed: () {},child: new Container());
