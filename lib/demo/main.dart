@@ -23,6 +23,7 @@ import 'package:flutter_app/router/router1.dart';
 import 'package:flutter_app/router/router2.dart';
 import 'package:flutter_app/websocket/websocketdemo.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter/cupertino.dart';
 
 /**
  * 当代码框里输入 stl 的时候，可以自动弹出创建无状态控件的模板选项，而输入 stf 的时，就会弹出创建有状态 Widget 的模板选项。
@@ -262,36 +263,36 @@ class MyScaffold extends StatelessWidget {
   }
 }
 
-main() {
-  runApp(new MaterialApp(
-    title: '我的应用',
-    //应用名称
-    home: new MyScaffold(),
-    //注册路由表
-    routes: {
-      "gestureRout": (BuildContext context) => new MyButton(),
-      "addRout": (BuildContext context) => new Counter(),
-      BottomNavigationDemo.routeName: (BuildContext context) =>
-          new BottomNavigationDemo(),
-      MyListApp.routeName: (BuildContext context) => new MyListApp(),
-      MySlideDeleteApp.routeName: (BuildContext context) =>
-          new MySlideDeleteApp(),
-      FirstScreen.routeName: (BuildContext context) => FirstScreen(),
-      TodosScreen.routeName: (BuildContext context) => TodosScreen(),
-      MyApp.routName: (_) => new MyApp(),
-      AnimationHome.routName: (_) => AnimationHome(),
-      AnimationHome02.routName: (_) => AnimationHome02(),
-    },
-    debugShowCheckedModeBanner: false,
-    //去调debug字样
-    localizationsDelegates: [
-      //国际化
-      GlobalMaterialLocalizations.delegate,
-      GlobalWidgetsLocalizations.delegate,
-    ],
-    supportedLocales: [
-      const Locale('zh', 'CH'),
-      const Locale('en', 'US'),
-    ],
-  ));
-}
+//main() {
+//  runApp(new MaterialApp(
+//    title: '我的应用',
+//    //应用名称
+//    home: new MyScaffold(),
+//    //注册路由表
+//    routes: {
+//      "gestureRout": (BuildContext context) => new MyButton(),
+//      "addRout": (BuildContext context) => new Counter(),
+//      BottomNavigationDemo.routeName: (BuildContext context) =>
+//          new BottomNavigationDemo(),
+//      MyListApp.routeName: (BuildContext context) => new MyListApp(),
+//      MySlideDeleteApp.routeName: (BuildContext context) =>
+//          new MySlideDeleteApp(),
+//      FirstScreen.routeName: (BuildContext context) => FirstScreen(),
+//      TodosScreen.routeName: (BuildContext context) => TodosScreen(),
+//      MyApp.routName: (_) => new MyApp(),
+//      AnimationHome.routName: (_) => AnimationHome(),
+//      AnimationHome02.routName: (_) => AnimationHome02(),
+//    },
+//    debugShowCheckedModeBanner: false,
+//    //去调debug字样
+//    localizationsDelegates: [
+//      //国际化
+//      GlobalMaterialLocalizations.delegate,
+//      GlobalWidgetsLocalizations.delegate,
+//    ],
+//    supportedLocales: [
+//      const Locale('zh', 'CH'),
+//      const Locale('en', 'US'),
+//    ],
+//  ));
+//}

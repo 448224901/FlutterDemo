@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/demo/main.dart';
 import 'demo.dart';
 
-//void main() => runApp(new MyApp());
+void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -59,6 +60,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _print() {
     print('点击次数$_counter');
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => MyScaffold()));
   }
 
   @override
@@ -104,11 +107,12 @@ class _MyHomePageState extends State<MyHomePage> {
             new IconButton(
                 icon: new Icon(Icons.aspect_ratio), onPressed: _print),
             new IconButton(
-                icon: new Icon(Icons.all_inclusive),
+              icon: new Icon(Icons.all_inclusive),
               onPressed: () {
                 Navigator.push(
                   context,
-                  new MaterialPageRoute(builder: (context) => new SecondScreen()),
+                  new MaterialPageRoute(
+                      builder: (context) => new SecondScreen()),
                 );
               },
             ),

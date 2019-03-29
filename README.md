@@ -7,4 +7,3 @@ A new Flutter application.
 For help getting started with Flutter, view our online
 [documentation](https://flutter.io/).
 
-demo/main.dart
