@@ -108,42 +108,48 @@ class MyScaffold extends StatelessWidget {
               style: Theme.of(context).primaryTextTheme.title)),
           RaisedButton(
             onPressed: () {
-              Navigator.pushNamed(context, "addRout");
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Counter()));
             },
             color: Colors.red,
             child: Text('跳转'),
           ),
           RaisedButton(
             onPressed: () {
-              Navigator.pushNamed(context, BottomNavigationDemo.routeName);
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => BottomNavigationDemo()));
             },
             color: Colors.red,
             child: Text('跳转BottomNavigationDemo'),
           ),
           RaisedButton(
             onPressed: () {
-              Navigator.pushNamed(context, MyListApp.routeName);
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => MyListApp()));
             },
             color: Colors.red,
             child: Text('跳转多类型列表'),
           ),
           RaisedButton(
             onPressed: () {
-              Navigator.pushNamed(context, MySlideDeleteApp.routeName);
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => MySlideDeleteApp()));
             },
             color: Colors.red,
             child: Text('跳转滑动删除列表'),
           ),
           RaisedButton(
             onPressed: () {
-              Navigator.pushNamed(context, FirstScreen.routeName);
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => FirstScreen()));
             },
             color: Colors.red,
             child: Text('跳转navigator'),
           ),
           RaisedButton(
             onPressed: () {
-              Navigator.pushNamed(context, TodosScreen.routeName);
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => TodosScreen()));
             },
             color: Colors.red,
             child: Text('跳转router1'),
