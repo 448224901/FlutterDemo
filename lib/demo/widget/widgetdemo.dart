@@ -14,9 +14,7 @@ import 'package:flutter_app/demo/widget/futurebuilderwidget.dart';
 import 'package:flutter_app/demo/widget/gallery/materialdemos/materialdemo.dart';
 import 'package:flutter_app/demo/widget/picker/PickerWidget.dart';
 import 'package:flutter_app/demo/widget/platformdemo.dart';
-import 'package:flutter_app/demo/widget/pulltorefresh/Example1.dart';
 import 'package:flutter_app/demo/widget/pulltorefresh/flutterRefresh.dart';
-import 'package:flutter_app/demo/widget/pulltorefresh/pulltorefresh.dart';
 import 'package:flutter_app/demo/widget/slivers/sliversDemo.dart';
 import 'package:flutter_app/demo/widget/stepperts.dart';
 import 'package:flutter_app/demo/widget/stickyHeader/StickyHeaderWidget.dart';
@@ -164,8 +162,8 @@ class MyWidgetList extends StatelessWidget {
         ),
         RaisedButton(
           onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => PullToRefreshWidget()));
+//            Navigator.push(context,
+//                MaterialPageRoute(builder: (context) => PullToRefreshWidget()));
           },
           color: Colors.blue,
           child: Text('下拉刷新上拉加载更多'),

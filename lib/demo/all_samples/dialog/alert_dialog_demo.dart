@@ -8,6 +8,15 @@ class AlertDialogDemo extends StatefulWidget {
 
 class _AlertDialogDemoState extends State<AlertDialogDemo> {
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Future.delayed(Duration(seconds: 1),(){
+      buildDialogs(context, 1);
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
