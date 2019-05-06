@@ -56,8 +56,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
   Widget build(BuildContext context) {
     _initPage();
     // TODO: implement build
-    return WillPopScope(
-        child: Scaffold(
+    return Scaffold(
           //WillPopScope监听返回按钮
           appBar: AppBar(
             title: Text('Flutter 学习'),
@@ -69,7 +68,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           bottomNavigationBar: new BottomNavigationBar(
             items: [
               BottomNavigationBarItem(icon: Icon(Icons.home),
-              title: Text('妹子')),
+              title: Text('基础')),
               BottomNavigationBarItem(icon: Icon(Icons.phone_android),title: Text('Android')),
               BottomNavigationBarItem(icon: Icon(Icons.phone_iphone),title: Text('IOS')),
             ],
@@ -82,7 +81,6 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             },
           ), //底部导航
           body: _body,
-        ),
-        onWillPop: _requestPop); //当前页面退出
+        ); //当前页面退出
   }
 }

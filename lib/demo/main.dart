@@ -14,6 +14,7 @@ import 'package:flutter_app/demo/loadmore/loadmore.dart';
 import 'package:flutter_app/demo/widget/widgetdemo.dart';
 import 'package:flutter_app/flutterstudy/studymian.dart';
 import 'package:flutter_app/flutterstudy/widget/demo_route/route_page_with_value.dart';
+import 'package:flutter_app/flutterstudy/widget/home_page.dart';
 import 'package:flutter_app/im/imhome.dart';
 import 'package:flutter_app/list/listdemo.dart';
 import 'package:flutter_app/list/multipletypeslist.dart';
@@ -197,7 +198,7 @@ class MyScaffold extends StatelessWidget {
           RaisedButton(
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => MyStudyApp()));
+                  MaterialPageRoute(builder: (context) => HomePage()));
             },
             color: Colors.red,
             child: Text('跳转到Flutter总结!'),
